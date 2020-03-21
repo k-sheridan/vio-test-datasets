@@ -1,4 +1,4 @@
-# Test dataset used in unit tests
+# Test dataset for use in integration tests
 The dataset used for integration tests consists of a precalibrated global shutter stereo camera pair with a 200 hz IMU.
 To reduce the overall size of this dataset, it was chopped to 1000 512X512 image pairs.  
 ## The TUM VI Benchmark for Evaluating Visual-Inertial Odometry 
