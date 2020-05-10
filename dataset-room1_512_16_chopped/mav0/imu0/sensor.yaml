@@ -1,26 +1,19 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2512
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww24020\viewh11120\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+#Default imu sensor yaml file
+sensor_type: imu
+comment: VI-Sensor IMU (ADIS16448)
 
-\f0\fs24 \cf0 #Default imu sensor yaml file\
-sensor_type: imu\
-comment: VI-Sensor IMU (ADIS16448)\
-\
-# Sensor extrinsics wrt. the body-frame.\
-T_BS:\
-  cols: 4\
-  rows: 4\
-  data: [1.0, 0.0, 0.0, 0.0,\
-         0.0, 1.0, 0.0, 0.0,\
-         0.0, 0.0, 1.0, 0.0,\
-         0.0, 0.0, 0.0, 1.0]\
-rate_hz: 200\
-\
-# inertial sensor noise model parameters (static)\
-gyroscope_noise_density: 0.00016     # [ rad / s / sqrt(Hz) ]   ( gyro "white noise" )\
-gyroscope_random_walk: 2.2e-05       # [ rad / s^2 / sqrt(Hz) ] ( gyro bias diffusion )\
-accelerometer_noise_density: 0.0028  # [ m / s^2 / sqrt(Hz) ]   ( accel "white noise" )\
-accelerometer_random_walk: 0.00086    # [ m / s^3 / sqrt(Hz) ].  ( accel bias diffusion )}
+# Sensor extrinsics wrt. the body-frame.
+T_BS:
+  cols: 4
+  rows: 4
+  data: [1.0, 0.0, 0.0, 0.0,
+         0.0, 1.0, 0.0, 0.0,
+         0.0, 0.0, 1.0, 0.0,
+         0.0, 0.0, 0.0, 1.0]
+rate_hz: 200
+
+# inertial sensor noise model parameters (static)
+gyroscope_noise_density: 0.00016     # [ rad / s / sqrt(Hz) ]   ( gyro "white noise" )
+gyroscope_random_walk: 2.2e-05       # [ rad / s^2 / sqrt(Hz) ] ( gyro bias diffusion )
+accelerometer_noise_density: 0.0028  # [ m / s^2 / sqrt(Hz) ]   ( accel "white noise" )
+accelerometer_random_walk: 0.00086    # [ m / s^3 / sqrt(Hz) ].  ( accel bias diffusion )
